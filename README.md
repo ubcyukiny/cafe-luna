@@ -47,30 +47,42 @@ Work ONLY on your feature branch.
 ## 👥 Work Distribution
 
 ### Ken
-- Global CSS (colors, fonts, spacing, layout)
-- Navbar + footer
-- Page structure & containers
-- Responsive design (mobile/tablet)
-- Grid/Flex system for all pages
+- Final global polish (spacing, colors, typography consistency)
+- Responsive fixes (mobile/tablet)
+- Final layout adjustments across all pages
+- Navbar + footer (added at the very end)
 - Code review + merge PRs
-- Final visual polish (spacing, animations, cleanup)
+- Minor animations / hover effects / cleanup
+
+
+---
 
 ### Luke — Home Page (`index.html`)
-- Hero section content (heading, tagline)
-- Daily special section
-- Insert images + text
+- Build full home page HTML
+- Hero section layout + text  
+- Daily special block  
+- Insert homepage images  
+- Basic styling in their own section of CSS
 
-### Vicent — Menu Page (`menu.html`)
-- Menu item cards (image, name, description, price)
-- Organize items using Ken’s grid
-- Add menu images
-- Content only, no custom CSS
+
+---
+
+### Vincent — Menu Page (`menu.html`)
+- Build full menu page HTML  
+- Create menu item cards (image, name, price)  
+- Organize items in a simple grid  
+- Add menu photos  
+- Write item descriptions  
+
+
+---
 
 ### Christian — About Page (`about.html`)
-- Café story section
-- Opening hours table
-- Image + map placeholder
-- Simple layout using existing classes
+- Build full about page HTML  
+- Café story section  
+- Opening hours table  
+- Add café image  
+- Add simple map placeholder  
 
 
 ---
