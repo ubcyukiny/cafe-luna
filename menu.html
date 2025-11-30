@@ -1,16 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>1999 Café – Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <!-- Navigation -->
+  <header>
+      <nav class="navbar-container">
+        <img src="/images/cafe_logo.png" alt="Cafe Luna Logo" class="logo" />
 
-    <!-- Main Content -->
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+  <section class="menu-hero">
+      <h1>Our Menu</h1>
+    </section>
 
-    <!-- Footer -->
+    <section id="menu" class="menu">
+      <!-- DRINKS -->
+      <h2 class="menu-title">Drinks</h2>
+
+      <section class="menu-category menu-category-drinks">
+        <ul class="menu-list">
+          <!-- EGG COFFEE -->
+          <li class="menu-item">
+            <img src="images/egg-coffee.jpg" alt="Egg Coffee" class="menu-item-image">
+            <div class="menu-item-main">
+              <span class="menu-item-name">EGG COFFEE</span>
+              <span class="menu-item-price">$5.49</span>
+            </div>
+            <p class="menu-item-desc">
+              Condensed milk, egg, and strong Vietnamese coffee.
+            </p>
+          </li>
+
+          <!-- GINGER CARAMEL -->
+          <li class="menu-item">
+            <img src="images/ginger-caramel.jpg" alt="Ginger Caramel Latte" class="menu-item-image">
+            <div class="menu-item-main">
+              <span class="menu-item-name">GINGER CARAMEL</span>
+              <span class="menu-item-price">$5.99</span>
+            </div>
+            <p class="menu-item-desc">
+              Ginger, caramel, and steamed milk latte.
+            </p>
+          </li>
+
+          <!-- MATCHA LATTE -->
+          <li class="menu-item">
+            <img src="images/matcha-latte.png" alt="Matcha Latte" class="menu-item-image">
+            <div class="menu-item-main">
+              <span class="menu-item-name">MATCHA LATTE</span>
+              <span class="menu-item-price">$5.99</span>
+            </div>
+            <p class="menu-item-desc">
+              Japanese green tea with creamy milk.
+            </p>
+          </li>
+
+          <!-- VIRGIN MATCHA BAILEY -->
+          <li class="menu-item">
+            <img src="images/virgin-matcha-bailey.jpg" alt="Virgin Matcha Bailey" class="menu-item-image">
+            <div class="menu-item-main">
+              <span class="menu-item-name">VIRGIN MATCHA BAILEY</span>
+              <span class="menu-item-price">$6.49</span>
+            </div>
+            <p class="menu-item-desc">
+              Non-alcoholic matcha drink with a rich, creamy finish.
+            </p>
+          </li>
+
+          <!-- COCONUT MATCHA -->
+          <li class="menu-item">
+            <img src="images/coconut-matcha.jpg" alt="Coconut Matcha" class="menu-item-image">
+            <div class="menu-item-main">
+              <span class="menu-item-name">COCONUT MATCHA</span>
+              <span class="menu-item-price">$5.99</span>
+            </div>
+            <p class="menu-item-desc">
+              Matcha blended with smooth coconut milk.
+            </p>
+          </li>
+
+          <!-- COCOA CARAMEL -->
+          <li class="menu-item">
+            <img src="images/cocoa-caramel.jpg" alt="Cocoa Caramel" class="menu-item-image">
+            <div class="menu-item-main">
+              <span class="menu-item-name">COCOA CARAMEL</span>
+              <span class="menu-item-price">$5.99</span>
+            </div>
+            <p class="menu-item-desc">
+              Chocolate, caramel, and steamed milk latte.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- DESSERTS -->
+      <h2 class="menu-title">Desserts</h2>
+
+      <section class="menu-category menu-category-desserts">
+        <ul class="menu-list">
+          <!-- DURIAN CREPE -->
+          <li class="menu-item">
+            <img src="images/durian-crepe.jpg" alt="Durian Crepe" class="menu-item-image">
+            <div class="menu-item-main">
+              <span class="menu-item-name">DURIAN CREPE</span>
+              <span class="menu-item-price">$12.99</span>
+            </div>
+            <p class="menu-item-desc">
+              Layered durian mille crepe with light cream.
+            </p>
+          </li>
+
+          <!-- TARO CREPE -->
+          <li class="menu-item">
+            <img src="images/taro-crepe.jpg" alt="Taro Crepe" class="menu-item-image">
+            <div class="menu-item-main">
+              <span class="menu-item-name">TARO CREPE</span>
+              <span class="menu-item-price">$12.99</span>
+            </div>
+            <p class="menu-item-desc">
+              Soft taro cream between thin crepe layers.
+            </p>
+          </li>
+
+          <!-- MATCHA CREPE -->
+          <li class="menu-item">
+            <img src="images/matcha-crepe.jpg" alt="Matcha Crepe" class="menu-item-image">
+            <div class="menu-item-main">
+              <span class="menu-item-name">MATCHA CREPE</span>
+              <span class="menu-item-price">$12.99</span>
+            </div>
+            <p class="menu-item-desc">
+              Matcha cream mille crepe with a dusting of green tea.
+            </p>
+          </li>
+
+          <!-- STRAWBERRY CREPE -->
+          <li class="menu-item">
+            <img src="images/strawberry-crepe.jpg" alt="Strawberry Crepe" class="menu-item-image">
+            <div class="menu-item-main">
+              <span class="menu-item-name">STRAWBERRY CREPE</span>
+              <span class="menu-item-price">$13.49</span>
+            </div>
+            <p class="menu-item-desc">
+              Layers of cream and crepe topped with fresh strawberries.
+            </p>
+          </li>
+
+          <!-- MANGO CREPE -->
+          <li class="menu-item">
+            <img src="images/mango-crepe.jpg" alt="Mango Crepe" class="menu-item-image">
+            <div class="menu-item-main">
+              <span class="menu-item-name">MANGO CREPE</span>
+              <span class="menu-item-price">$12.99</span>
+            </div>
+            <p class="menu-item-desc">
+              Sweet mango-filled crepe with a soft outer layer.
+            </p>
+          </li>
+
+          <!-- COFFEE CREPE -->
+          <li class="menu-item">
+            <img src="images/coffee-crepe.jpg" alt="Coffee Crepe" class="menu-item-image">
+            <div class="menu-item-main">
+              <span class="menu-item-name">COFFEE CREPE</span>
+              <span class="menu-item-price">$12.99</span>
+            </div>
+            <p class="menu-item-desc">
+              Coffee-infused mille crepe with caramel drizzle.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+  <section class="footer-top">
+    <div class="footer-logo">
+      <!-- replace src with your actual logo path -->
+      <img src="images/1999-logo.png" alt="1999 Coffee Bar Logo">
+    </div>
+
+    <div class="footer-newsletter">
+      <h2 class="footer-heading">News Letter</h2>
+      <form class="newsletter-form" action="#" method="post">
+        <input
+          type="email"
+          name="email"
+          class="newsletter-input"
+          placeholder="Enter your email"
+          required
+        >
+        <button type="submit" class="newsletter-button">
+          Subscribe
+        </button>
+      </form>
+      <p class="newsletter-text">
+        Sign up with your email address to receive news and updates
+      </p>
+    </div>
+
+    <div class="footer-contact">
+      <h2 class="footer-heading">CONTACT US</h2>
+
+      <nav class="footer-nav">
+        <a href="index.html">Home</a><br>
+        <a href="menu.html">Menu</a><br>
+        <a href="about.html">About Us</a>
+      </nav>
+
+      <div class="footer-contact-info">
+        <p>Vancouver, BC, V5Q 3H7</p>
+        <p>Call Us: +778 887 7878</p>
+        <p><a href="mailto:example@gmail.com">example@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-bottom">
+    <p class="footer-copy">
+      Copyright ©2023 LET’s TEA. All rights reserved.
+    </p>
+  </section>
+</footer>
+
 </body>
 </html>
