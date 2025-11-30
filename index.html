@@ -1,63 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home – Café Luna</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Luna</title>
 
-  <body>
-    <header>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="about.html">About</a>
-      </nav>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- HEADER -->
+    <header class="header">
+        <img src="images/logo-1999.png" class="header-logo" alt="">
+        <nav class="header-nav">
+            <a href="#">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+        </nav>
     </header>
 
-    <main>
-      <!-- Hero Banner -->
-      <section class="hero">
-        <h1>Welcome to Café Luna</h1>
-        <p>Your cozy neighbourhood café — fresh brews, warm vibes.</p>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <img src="images/divider-ornament.png" class="hero-divider" alt="">
 
-        <figure>
-          <img src="images/cafe-front.jpg" alt="Front view of Café Luna" />
-          <figcaption>Where great coffee meets great people.</figcaption>
-        </figure>
-      </section>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-sub">— Welcome —</p>
 
-      <!-- Highlights -->
-      <section class="highlights">
-        <h2>What We Offer</h2>
+                <h1 class="hero-title">
+                    We are <br>
+                    coffee <br>
+                    lover
+                </h1>
 
-        <article class="highlight-item">
-          <h3>Fresh Coffee</h3>
-          <p>Brewed daily with locally sourced beans.</p>
-        </article>
+                <p class="hero-desc">
+                    “We source high-quality beans, roast them to perfection, and brew coffee that’s
+                    rich, smooth, and full of flavour.”
+                </p>
 
-        <article class="highlight-item">
-          <h3>Pastries & Treats</h3>
-          <p>Handmade baked goods served warm every morning.</p>
-        </article>
+                <button class="hero-btn">Explore Menu →</button>
+            </div>
 
-        <article class="highlight-item">
-          <h3>Cozy Workspace</h3>
-          <p>Free Wi-Fi & plenty of seating for studying or chatting.</p>
-        </article>
-      </section>
+            <img src="images/hero-coffee-blob.png" class="hero-img" alt="">
+        </div>
+    </section>
 
-      <!-- Call to action -->
-      <section class="cta">
-        <h2>Visit Us Today</h2>
-        <p>Come by for a cup of comfort and stay for the atmosphere.</p>
-        <a class="button" href="menu.html">Explore Our Menu</a>
-      </section>
-    </main>
+    <!-- ABOUT SECTION -->
+    <section class="about-section">
+        <div class="about-inner">
 
-    <footer>
-      <p>© 2025 Café Luna</p>
-    </footer>
-  </body>
+            <img src="images/about-cafe-blob.png" class="about-img" alt="">
+
+            <div class="about-text-block">
+                <h2 class="about-title">About our 1999</h2>
+
+                <p class="about-desc">
+                    1999 was a turning point for Vietnam — the year coffee culture flourished,
+                    leading to a new era of quality and global recognition.
+                </p>
+
+                <button class="about-btn">Learn More →</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- DAILY SPECIAL -->
+    <section class="daily-section">
+        <h2 class="daily-title">Daily Special</h2>
+
+        <img src="images/egg-coffee.jpg" class="daily-img" alt="">
+    </section>
+
+    <!-- REAL BEAN -->
+    <section class="bean-section">
+        <h2 class="bean-title">100% Real Coffee Bean</h2>
+
+        <img src="images/cafe-products.jpg" class="bean-img" alt="">
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews-section">
+        <h2 class="reviews-title">Reviews</h2>
+
+        <div class="reviews-grid">
+            <div class="review-card">“One of the best!” — Customer</div>
+            <div class="review-card">“Very consistent taste.” — Customer</div>
+            <div class="review-card">“My new favourite café.” — Customer</div>
+            <div class="review-card">“Great ambience & service!” — Customer</div>
+        </div>
+    </section>
+
+</div>
+
+</body>
 </html>

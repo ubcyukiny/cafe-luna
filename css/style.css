@@ -1,183 +1,245 @@
-/* CafeLuna Project - Starter Styles */
-
-/* Playfair Display */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
-/* DM Sans */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
+/* ----------------------------------------------
+   BASE LAYOUT
+---------------------------------------------- */
 body {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 22px;
-  color: #1e1e1e;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
 }
 
-h1 {
-  font-family: 'Playfair Display', sans-serif;
-  color: #2b231d;
-  font-size: 60px;
+.page {
+    width: 1920px;
+    margin: 0 auto;
 }
 
-.navbar-container {
-  background-color: #f5f2ef;
-  margin: 0 auto;
-  padding: 30px 50px;
-  display: flex;
-  font-weight: 700;
-  font-size: 22px;
-  justify-content: space-between;
-  align-items: center;
+/* ----------------------------------------------
+   COLORS (from Figma)
+---------------------------------------------- */
+:root {
+    --brown-dark: #2B231D;
+    --brown-mid: #B97847;
+    --text-dark: #1E1E1E;
+    --cream-light: #F5F2EF;
+    --tan-bg: #C5AE97;
+    --tan-light: #EBDDCB;
+    --accent-red: #DE6868;
 }
 
-.nav-links {
-  list-style: none;
-  gap: 24px;
-  margin: 0;
-  padding: 0;
-  display: flex;
+/* ----------------------------------------------
+   HEADER
+---------------------------------------------- */
+
+.header {
+    width: 100%;
+    height: 250px;              /* increased */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px;
 }
 
-.nav-links li a {
-  text-decoration: none;
-  color: #1e1e1e;
-  transition: 0.25s ease;
+.header-logo {
+    width: 140px;
 }
 
-.nav-links a.active {
-  text-decoration: underline;
-  color: #de6868;
+.header-nav a {
+    margin-left: 60px;          /* increased spacing */
+    font-size: 22px;
+    color: #000000;
+    text-decoration: none;
 }
 
-.nav-links a:hover {
-  color: #7a4b2a;
+/* ----------------------------------------------
+   HERO SECTION
+---------------------------------------------- */
+
+.hero-section {
+    width: 100%;
+    padding-top: 0;            /* hero starts higher */
+    padding-bottom: 140px;     /* reduced spacing */
 }
 
-.logo {
-  width: 100px;
-  height: auto;
+.hero-divider {
+    display: block;
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 30px;       /* moved closer to text */
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.hero-content {
+    display: flex;
+    width: 1600px;             /* wider layout */
+    margin: 0 auto;
+    justify-content: flex-start;
+    gap: 200px;                /* pushes image right */
+}
+
+.hero-text {
+    width: 600px;
+}
+
+.hero-sub {
+    color: var(--brown-dark);
+    font-size: 22px;
+}
+
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    color: var(--brown-dark);
+}
+
+.hero-desc {
+    font-size: 22px;
+    line-height: 160%;
+    color: var(--text-dark);
+    margin-top: 20px;
+}
+
+.hero-btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: var(--accent-red);
+    color: #FFFFFF;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hero-img {
+    width: 520px;              /* increased image size */
+    margin-top: 40px;
+}
+
+/* ----------------------------------------------
+   ABOUT SECTION
+---------------------------------------------- */
 
 .about-section {
-  width: 100%;
-  padding: 6rem 0;
-  background-color: #f8f9fa;
+    width: 100%;
+    background-color: var(--tan-light);
+    padding: 200px 0;          /* increased */
 }
 
 .about-inner {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
+    display: flex;
+    width: 1500px;
+    margin: 0 auto;
+    align-items: center;
 }
 
-.about-inner p {
-  margin-top: 1.5rem;
-  font-size: 20px;
-  color: #6b5c54;
-  line-height: 1.8;
-}
-.about-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
-  margin: 6rem auto;
-  padding: 2rem 0;
+.about-img {
+    width: 350px;
 }
 
-.about-row.reverse {
-  flex-direction: row-reverse;
+.about-text-block {
+    margin-left: 80px;
+    width: 700px;
 }
 
-.about-text {
-  flex: 1;
+.about-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    font-weight: 700;
+    color: var(--brown-dark);
 }
 
-.about-text h1 {
-  font-size: 46px;
-  margin-bottom: 1rem;
-  color: #2b231d;
+.about-desc {
+    font-size: 22px;
+    line-height: 170%;
+    color: var(--text-dark);
+    margin: 20px 0;
 }
 
-.about-text p {
-  font-size: 20px;
-  color: #6b5c54;
-  line-height: 1.8;
+.about-btn {
+    background-color: var(--accent-red);
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
 }
 
-.about-image {
-  flex: 1;
+/* ----------------------------------------------
+   DAILY SPECIAL
+---------------------------------------------- */
+
+.daily-section {
+    width: 100%;
+    background-color: var(--tan-bg);
+    padding: 180px 0;
+    text-align: center;
 }
 
-.about-image img {
-  width: 100%;
-  max-width: 550px;
-  height: 420px;
-  object-fit: cover;
-  border-radius: 16px;
-  display: block;
+.daily-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    color: var(--brown-dark);
 }
 
-.about-row {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-  padding: 0 4rem;
+.daily-img {
+    width: 380px;
+    margin-top: 50px;
+    border-radius: 300px;
 }
 
-.about-text {
-  max-width: 600px;
+/* ----------------------------------------------
+   100% REAL COFFEE BEAN
+---------------------------------------------- */
+
+.bean-section {
+    width: 100%;
+    padding: 180px 0;
+    background-color: #FFFFFF;
+    text-align: center;
 }
 
-.visit-section {
-  background: #cfbcae;
-  padding: 2rem 2rem;
-  text-align: center;
+.bean-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    color: var(--brown-dark);
 }
 
-.section-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 54px;
-  color: #2b231d;
+.bean-img {
+    width: 800px;
+    margin-top: 50px;
 }
 
-.visit-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 3rem;
+/* ----------------------------------------------
+   REVIEWS
+---------------------------------------------- */
+
+.reviews-section {
+    width: 100%;
+    padding: 180px 0;
+    background-color: var(--cream-light);
+    text-align: center;
 }
 
-.visit-map img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 12px;
+.reviews-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    font-weight: 700;
+    color: var(--brown-dark);
 }
 
-.visit-hours {
-  background: #f6eee6;
-  padding: 2.5rem 3rem;
-  border-radius: 10px;
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
-  min-width: 350px;
+.reviews-grid {
+    width: 1200px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
 }
 
-.visit-hours table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 18px;
-  font-family: 'DM Sans', sans-serif;
-}
-
-.visit-hours td {
-  padding: 0.9rem 0;
-  color: #1e1e1e;
-  font-weight: bold;
-  background: #f6eee6;
+.review-card {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 12px;
+    font-size: 20px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.08);
 }
