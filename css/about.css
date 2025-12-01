@@ -1,0 +1,125 @@
+.about-section {
+  width: 100%;
+  padding: 6rem 0;
+  background-color: #f8f9fa;
+}
+
+.about-inner {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-inner p {
+  margin-top: 1.5rem;
+  font-size: 20px;
+  color: #6b5c54;
+  line-height: 1.8;
+}
+.about-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  margin: 6rem auto;
+  padding: 2rem 0;
+}
+
+.about-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h1 {
+  font-size: 46px;
+  margin-bottom: 1rem;
+  color: #2b231d;
+}
+
+.about-text p {
+  font-size: 20px;
+  color: #6b5c54;
+  line-height: 1.8;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 550px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+}
+
+.about-row {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 0 180px;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.visit-section {
+  background: #cfbcae;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 54px;
+  color: #2b231d;
+}
+
+.container {
+  background-color: var(--tan-bg);
+}
+
+.visit-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 3rem;
+}
+
+.visit-map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.visit-hours {
+  background: #f6eee6;
+  padding: 2.5rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  min-width: 350px;
+}
+
+.visit-hours table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.visit-hours td {
+  padding: 0.9rem 0;
+  color: #1e1e1e;
+  font-weight: bold;
+  background: #f6eee6;
+}

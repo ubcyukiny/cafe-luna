@@ -5,28 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <nav class="navbar-container">
-        <img
-          src="images/cafe-luna-logo.png"
-          alt="Cafe Luna Logo"
-          class="logo"
-        />
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header-container">
+        <img src="images/cafe_logo.png" class="header-logo" alt="" />
+
+        <nav class="header-nav">
+          <a href="/">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html" class="active">About Us</a>
+        </nav>
+      </div>
     </header>
 
     <main class="container">
       <!-- ABOUT STORY (center) -->
       <section class="about-section">
         <div class="about-inner">
+          <img src="/images/heading.png" class="divider-ornament" alt="" />
           <h1>About Us</h1>
           <p>
             Welcome to Cafe Luna — a cozy local café committed to fresh brews,
@@ -40,7 +39,7 @@
       <!-- ABOUT P2 (image left, text right) -->
       <section class="about-row">
         <div class="about-image">
-          <img src="images/cafe-products.jpg" alt="Cafe Products" />
+          <img src="images/products.jpg" alt="Cafe Products" />
         </div>
         <div class="about-text">
           <h1>Enjoy Best Quality Products</h1>
@@ -54,7 +53,7 @@
       <!-- ABOUT P3 (text left, image right) -->
       <section class="about-row reverse">
         <div class="about-image">
-          <img src="images/cafe-interior.jpg" alt="Cafe Environment" />
+          <img src="images/environment.jpg" alt="Cafe Environment" />
         </div>
         <div class="about-text">
           <h1>Cozy Ambiance and Environment</h1>
@@ -72,7 +71,7 @@
         <div class="visit-wrapper">
           <!-- LEFT: MAP -->
           <div class="visit-map">
-            <img src="images/cafe-luna-map.png" alt="Map Location" />
+            <img src="images/map_placeholder.png" alt="Map Location" />
           </div>
 
           <!-- RIGHT: OPENING HOURS -->

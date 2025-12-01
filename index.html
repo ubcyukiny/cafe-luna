@@ -1,101 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cafe Luna</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-<div class="page">
-
+  <body>
     <!-- HEADER -->
     <header class="header">
-        <img src="images/logo-1999.png" class="header-logo" alt="">
+      <div class="header-container">
+        <img src="images/cafe_logo.png" class="header-logo" alt="" />
+
         <nav class="header-nav">
-            <a href="#">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="about.html">About Us</a>
+          <a href="#" class="active">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About Us</a>
         </nav>
+      </div>
     </header>
 
     <!-- HERO SECTION -->
     <section class="hero-section">
-        <img src="images/divider-ornament.png" class="hero-divider" alt="">
-
+      <div class="container hero-content">
         <div class="hero-content">
-            <div class="hero-text">
-                <p class="hero-sub">— Welcome —</p>
-
-                <h1 class="hero-title">
-                    We are <br>
-                    coffee <br>
-                    lover
-                </h1>
-
-                <p class="hero-desc">
-                    “We source high-quality beans, roast them to perfection, and brew coffee that’s
-                    rich, smooth, and full of flavour.”
-                </p>
-
-                <button class="hero-btn">Explore Menu →</button>
-            </div>
-
-            <img src="images/hero-coffee-blob.png" class="hero-img" alt="">
+          <div class="hero-text">
+            <img src="/images/heading.png" class="divider-ornament" alt="" />
+            <h1 class="hero-title">We are coffee lover</h1>
+            <p class="hero-desc">
+              We source high-quality beans, roast them to perfection, and brew
+              coffee that's rich, smooth, and full of flavour.Whether you're
+              starting your morning or taking a break, our coffee brings
+              comfort, energy, and a moment of pure enjoyment.
+              <br /><br />
+              Taste the difference - one cup at a time!
+            </p>
+            <a href="menu.html" class="btn-primary">
+              Explore Menu
+              <span class="btn-arrow">→</span>
+            </a>
+          </div>
+          <img src="images/main.png" class="hero-main-img" alt="" />
         </div>
+      </div>
     </section>
 
     <!-- ABOUT SECTION -->
     <section class="about-section">
+      <div class="container about-inner">
         <div class="about-inner">
-
-            <img src="images/about-cafe-blob.png" class="about-img" alt="">
-
-            <div class="about-text-block">
-                <h2 class="about-title">About our 1999</h2>
-
-                <p class="about-desc">
-                    1999 was a turning point for Vietnam — the year coffee culture flourished,
-                    leading to a new era of quality and global recognition.
-                </p>
-
-                <button class="about-btn">Learn More →</button>
-            </div>
-
+          <img src="images/main2.png" class="hero-main-img" alt="" />
+          <div class="about-text-block">
+            <img src="/images/heading.png" class="divider-ornament" alt="" />
+            <h2 class="about-title">About our 1999</h2>
+            <p class="about-desc">
+              1999 was a turning point for Vietnam — a year when the country
+              began to rise and strengthen its coffee production. It marked the
+              beginning of a new era, where Vietnamese coffee grew in quality,
+              culture, and global recognition. Every cup we serve reflects the
+              spirit of growth, resilience, and pride that started in 1999.
+              <br /><br />
+              Rich flavors, enticing aromas, and a cozy atmosphere await you at
+              Cafe Luna.
+            </p>
+            <a href="about.html" class="btn-primary">Read More →</a>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- DAILY SPECIAL -->
     <section class="daily-section">
+      <div class="container daily-inner">
         <h2 class="daily-title">Daily Special</h2>
+        <img src="images/heading.png" class="divider-ornament" alt="" />
 
-        <img src="images/egg-coffee.jpg" class="daily-img" alt="">
-    </section>
+        <div class="daily-grid">
+          <!-- Card 1 -->
+          <div class="daily-card">
+            <img src="images/eggcoffee.jpg" class="daily-img" alt="" />
+            <h3 class="daily-name">Egg Coffee</h3>
+            <p class="daily-desc">
+              A creamy Vietnamese classic with whipped egg yolk and strong
+              espresso.
+            </p>
+          </div>
 
-    <!-- REAL BEAN -->
-    <section class="bean-section">
-        <h2 class="bean-title">100% Real Coffee Bean</h2>
+          <!-- Card 2 -->
+          <div class="daily-card">
+            <img src="images/durian-crepe.jpg" class="daily-img" alt="" />
+            <h3 class="daily-name">Durian Crepe</h3>
+            <p class="daily-desc">
+              Soft crepe wrapped around fresh durian cream — sweet, bold,
+              unforgettable.
+            </p>
+          </div>
 
-        <img src="images/cafe-products.jpg" class="bean-img" alt="">
-    </section>
-
-    <!-- REVIEWS -->
-    <section class="reviews-section">
-        <h2 class="reviews-title">Reviews</h2>
-
-        <div class="reviews-grid">
-            <div class="review-card">“One of the best!” — Customer</div>
-            <div class="review-card">“Very consistent taste.” — Customer</div>
-            <div class="review-card">“My new favourite café.” — Customer</div>
-            <div class="review-card">“Great ambience & service!” — Customer</div>
+          <!-- Card 3 -->
+          <div class="daily-card">
+            <img src="images/coconut-matcha.jpg" class="daily-img" alt="" />
+            <h3 class="daily-name">Coconut Matcha</h3>
+            <p class="daily-desc">
+              Smooth matcha blended with coconut milk for a tropical, earthy
+              balance.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
-</div>
-
-</body>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="footer-text">© 2024 Cafe Luna. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
