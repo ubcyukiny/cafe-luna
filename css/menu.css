@@ -1,0 +1,53 @@
+.menu-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px 20px 40px;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 50px 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.menu-item {
+  text-align: center;
+  padding: 10px;
+}
+
+.menu-item-name {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+.menu-item-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  transition: transform 0.25s ease;
+}
+
+.menu-item-image:hover {
+  transform: scale(1.05);
+}
+
+.menu-item-main {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  font-weight: 700;
+}
