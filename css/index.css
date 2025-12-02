@@ -1,15 +1,19 @@
+/* HERO */
 .hero-section {
   background-color: white;
 }
 
 .hero-content {
   display: flex;
-  padding: 70px 70px 0px 70px;
+  padding: 40px;
   gap: 40px;
 }
 
 .hero-main-img {
-  height: 75%;
+  height: 100%;
+  width: auto;
+  max-width: 450px;
+  border-radius: 20%;
 }
 
 .btn-primary {
@@ -41,12 +45,8 @@
 .about-inner {
   background-color: #f0e9e1;
   display: flex;
-  padding: 70px 70px 0px 70px;
+  padding: 40px;
   gap: 40px;
-}
-
-.hero-main-img {
-  border-radius: 20%;
 }
 
 a {
@@ -75,6 +75,7 @@ a:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   justify-items: center;
+  padding: 10px;
 }
 
 .daily-card {
@@ -82,9 +83,19 @@ a:hover {
   padding: 35px 28px;
   border-radius: 22px;
   width: 100%;
-  max-width: 380px;
+  max-width: 350px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.daily-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.daily-card:hover .daily-img {
+  filter: brightness(1.05);
 }
 
 .daily-img {
@@ -108,9 +119,76 @@ a:hover {
   line-height: 1.6;
 }
 
-@media (max-width: 900px) {
+/* RESPONSIVE LAYOUT */
+
+/* DESKTOP */
+@media (max-width: 1280px) {
+  /* HERO */
+  .hero-content {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-main-img {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  /* ABOUT */
+  .about-inner {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .about-inner img.hero-main-img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* DAILY SPECIAL GRID */
+  .daily-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 24px;
+    padding: 0 30px;
+    place-items: center;
+  }
+
+  .daily-card {
+    max-width: 320px;
+    padding: 26px 20px;
+  }
+
+  .daily-img {
+    height: 260px;
+    border-radius: 20px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 800px) {
   .daily-grid {
     grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .daily-card {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 22px 18px;
+  }
+
+  .daily-img {
+    aspect-ratio: 4 / 2;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 22px;
   }
 }

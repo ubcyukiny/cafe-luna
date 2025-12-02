@@ -10,12 +10,14 @@
 .menu {
   display: flex;
   flex-direction: column;
-  padding: 20px 40px 20px 40px;
+  padding: 10px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .menu-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   gap: 50px 20px;
   list-style: none;
   padding: 0;
@@ -42,7 +44,7 @@
 }
 
 .menu-item-image:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
 }
 
 .menu-item-main {
@@ -50,4 +52,19 @@
   justify-content: center;
   gap: 12px;
   font-weight: 700;
+}
+
+/* mobile  */
+@media (max-width: 480px) {
+  .menu-title {
+    font-size: 30px;
+  }
+
+  .menu-hero h1 {
+    font-size: 50px;
+  }
+
+  .divider-ornament {
+    width: 220px;
+  }
 }

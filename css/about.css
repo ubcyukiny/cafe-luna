@@ -1,3 +1,15 @@
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 54px;
+  color: #2b231d;
+}
+
+.container {
+  background-color: var(--tan-bg);
+}
+
+/* ABOUT */
+
 .about-section {
   width: 100%;
   padding: 6rem 0;
@@ -69,22 +81,12 @@
   max-width: 600px;
 }
 
+/* VISIT */
 .visit-section {
   background: #cfbcae;
   padding: 2rem 2rem;
   text-align: center;
 }
-
-.section-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 54px;
-  color: #2b231d;
-}
-
-.container {
-  background-color: var(--tan-bg);
-}
-
 .visit-wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -122,4 +124,130 @@
   color: #1e1e1e;
   font-weight: bold;
   background: #f6eee6;
+}
+
+/* RESPONSIVE LAYOUT */
+/* TABLET */
+@media (max-width: 1200px) {
+  .about-row {
+    padding: 0 60px;
+    gap: 2rem;
+  }
+
+  .about-image img {
+    max-width: 420px;
+    height: 300px;
+  }
+
+  .about-text h1 {
+    font-size: 34px;
+  }
+
+  .about-text p {
+    font-size: 18px;
+  }
+
+  .visit-wrapper {
+    gap: 2rem;
+  }
+
+  .visit-hours {
+    min-width: 300px;
+    padding: 2rem;
+  }
+
+  .visit-hours table {
+    font-size: 16px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 3rem 0;
+  }
+
+  .about-inner p {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+
+  .about-row,
+  .about-row.reverse {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 18px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .about-text h1 {
+    font-size: 30px;
+  }
+
+  .visit-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .visit-hours {
+    width: 100%;
+    min-width: unset;
+    padding: 1.5rem 1.2rem;
+    box-sizing: border-box;
+  }
+
+  .visit-hours table {
+    width: 100%;
+    table-layout: fixed;
+    font-size: 16px;
+  }
+
+  .visit-hours td {
+    word-wrap: break-word;
+    text-align: left;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 425px) {
+  .about-text h1 {
+    font-size: 26px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+  .about-inner p {
+    font-size: 16px;
+  }
+
+  .about-image img {
+    border-radius: 8px;
+  }
+
+  .visit-hours {
+    padding: 1.2rem 0.8rem;
+  }
+
+  .visit-hours table {
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
 }

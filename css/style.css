@@ -90,4 +90,39 @@ h2 {
 /* Footer */
 footer {
   color: var(--brown-mid);
+  padding-left: 10px;
+}
+
+/* mobile header */
+@media (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  .header-logo {
+    width: 70px;
+    height: auto;
+  }
+
+  .header-nav {
+    display: flex;
+    gap: 12px;
+    font-size: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header-nav a {
+    display: inline-block;
+    padding: 4px 0;
+  }
+
+  .divider-ornament {
+    width: 100%;
+    height: auto;
+  }
 }
